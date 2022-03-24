@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Stats preview card component</title>
@@ -22,29 +21,24 @@
     <div class="card-container">
 
       <div class="image">
-        <img src="images/image-header-desktop.jpg" alt="team working" class="desktop-image">
-        <img src="images/image-header-mobile.jpg" alt="team working" class="mobile-image">
+        <picture>
+          <source srcset="images/image-header-desktop.jpg" media="(min-width:900px)">
+          <img src="images/image-header-mobile.jpg" alt="team working" class="card-image">
+        </picture>
       </div>
 
       <div class="content">
-        <div class="heading">
-          <h1>Get <span>insights</span> that help your business grow.</h1>
-          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        <div class="heading-div">
+          <h1 class="header">Get <span class="colored-word">insights</span> that help your business grow.</h1>
+          <p class="heading-text">Discover the benefits of data analytics and make better decisions regarding revenue, customer
             experience, and overall efficiency.</p>
         </div>
         <div class="statistics">
-          <div class="stat">
-            <h2>10k+</h2>
-            <p class="stat-text">companies</p>
-          </div>
-          <div class="stat">
-            <h2>314</h2>
-            <p class="stat-text">templates</p>
-          </div>
-          <div class="stat">
-            <h2>12M+</h2>
-            <p class="stat-text">queries</p>
-          </div>
+          <ul class="stat-list">
+            <li class="stat-text"><span class="stat-heading">10k+</span>companies</li>
+            <li class="stat-text"><span class="stat-heading">314</span> templates</li>
+            <li class="stat-text"><span class="stat-heading">12M+</span> queries</li>
+          </ul>
         </div>
       </div>
 
